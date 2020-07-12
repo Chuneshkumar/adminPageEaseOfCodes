@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: local('Metropolis Bold'), local('Metropolis-Bold'),
+        url('../fonts/Metropolis-Bold.woff2') format('woff2'),
+        url('../fonts/Metropolis-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: local('Metropolis Medium'), local('Metropolis-Medium'),
+        url('../fonts/Metropolis-Medium.woff2') format('woff2'),
+        url('../fonts/Metropolis-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: local('Metropolis Regular'), local('Metropolis-Regular'),
+        url('../fonts/Metropolis-Regular.woff2') format('woff2'),
+        url('../fonts/Metropolis-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: local('Metropolis Bold'), local('Metropolis-Bold'),
+        url('../fonts/Metropolis-Bold.woff2') format('woff2'),
+        url('../fonts/Metropolis-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+#hero_team{
+    /* min-height: 50vh; */
+}
+
+#hero_team h1, #Team_Members h1, #Intern_Cards h1, #Join h1{
+  font-family: "Metropolis";
+  font-weight: 600;
+  color:#20123a;
+
+}
+
+#Team_Members{
+  background-color:#f9f9fa;
+  color:#20123a;
+
+}
+
+#Team_Cards > div > .card{
+    width: 80%;
+    margin: 1.5rem auto;
+}
+
+#Team_Cards div .card .front .card-body h3,
+#Team_Cards div .card .back h3{
+  font-size:1.5rem;
+  }
+
+#Join{
+    min-height: 50vh;
+    background:#fafafa;
+    /* background: url("../../Pratice/team2.svg") no-repeat ; */
+    /* background-size: contain; */
+    /* background-position: 200% 100%; */
+  }
+
+@media (min-width:768px) {
+  .hero_left {
+    /* max-width: 10%; */
+    overflow: hidden;
+    line-height: 1.8;
+  }
+  #hero_team h1{
+    font-size: calc(2rem + 1.5vw) ;
+  }
+
+  #hero_team p{
+    font-size: 1.3rem;
+    font-family: "Metropolis";
+    color: #999;
+  }
+
+  #Team_Members h2,p{
+    font-family: "Inter";
+    font-weight: 600;
+    font-size:1rem;
+  }
+  #Team_Cards > div.col > .card{
+    width: 14rem;
+  }
+  .back p{
+    font-size: 2rem;
+  }
+
+  #Join h1{
+    font-size: 2rem;
+  }
+
+  #Join{
+    background: url("../../Pratice/teamCTA.jpg") no-repeat ;
+    background-size: contain;
+    background-position: 140% 100%;
+  }
+}
+ @media (min-width:991px) {
+  .hero_left {
+    overflow: hidden;
+    line-height: 1.8;
+  }
+
+  #hero_team h1{
+    font-size: calc(3rem + 1.5vw) ;
+
+  }
+
+ #Team_Members h1{
+    font-size: calc(2rem + 1.5vw) ;
+ }
+  #hero_team p{
+    font-size: 1.3rem;
+  }
+
+  .hero_left_content{
+  max-width: 80%;
+  /* margin: 0 auto; */
+  }
+
+  #Team_Members h2,p{
+    font-family: "Inter";
+    font-weight: 600;
+  }
+  .back p{
+    font-size: 2rem;
+  }
+
+  #Join {
+    background: url("../../Pratice/teamCTA.jpg") no-repeat ;
+    background-size: contain;
+    background-position: 100% 100%;
+  }
+  #Join h1{
+    font-size: 2.3rem;
+  }
+}
+
+
+
+/* ############## */
+/* #####Card##### */
+/* ############## */
+
+.card{
+  position: relative;
+  background: transparent;
+  border:none;
+}
+#Intern_Cards{
+  /* background: rgba(255, 0, 0, .1);; */
+}
+#Intern_Cards .card{
+  padding:1rem;
+  margin:1rem;
+}
+
+.card:hover > .front{
+  transform:perspective(600px) rotateY(-180deg);
+
+}
+.card:hover > .back{
+  transform:perspective(600px) rotateY(0deg);
+
+}
+.front, .back{
+  backface-visibility: hidden;
+  transition: transform .6s ease;
+}
+.front{
+  /* background: #f1f1f1; */
+  transform:perspective(600px) rotateY(0deg);
+}
+.back{
+  position: absolute;
+  top: 0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background: rgba(108, 218, 238, .15);
+  transform:perspective(600px) rotateY(180deg);
+
+}
+.back p{
+  /* font-size: 2rem; */
+}
+#Back_Card_Icons{
+  min-width:60%;
+}
+
+#Join button{
+  font-size:1.8rem;
+  /* line-height: 1.7; */
+}

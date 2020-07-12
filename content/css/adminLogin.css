@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: local('Metropolis Bold'), local('Metropolis-Bold'),
+        url('../fonts/Metropolis-Bold.woff2') format('woff2'),
+        url('../fonts/Metropolis-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: local('Metropolis Medium'), local('Metropolis-Medium'),
+        url('../fonts/Metropolis-Medium.woff2') format('woff2'),
+        url('../fonts/Metropolis-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: local('Metropolis Regular'), local('Metropolis-Regular'),
+        url('../fonts/Metropolis-Regular.woff2') format('woff2'),
+        url('../fonts/Metropolis-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    src: local('Metropolis Bold'), local('Metropolis-Bold'),
+        url('../fonts/Metropolis-Bold.woff2') format('woff2'),
+        url('../fonts/Metropolis-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.loginBtnRow a{
+  font-family: "Metropolis";
+}
+main{
+  font-family: "Metropolis";
+}
+.rightPane{
+  max-width:96%;
+}
+h1{
+
+  color: #20123a;
+}
+
+.mainFormPreCursor, .socialPreCursor{
+	font-size: 0.70rem;
+}
+.loginForm{
+	width: 100%;
+}
+.mainFormContent label, .mainFormContent input:not([type='checkbox']){
+	display:block;
+	width:100%;
+}
+.mainFormContent input{
+	font-size: 0.95rem;
+	padding:.55rem 0rem 0rem 1rem;
+	color: #666;
+  outline:none;
+	border: none;
+	border-bottom: 1px solid #20123a;
+}
+.mainFormContent input:focus{
+
+  border-bottom: 1px solid #f79e02;
+}
+.mainFormContent button[type='submit']{
+
+	width:100%;
+}
+.mainFormContent #password{
+	position:relative;
+}
+.mainFormContent #password + a{
+	position: absolute;
+	top: 193px;
+	right: 25px;
+	color: black;
+}
+#rememberCheck:focus{
+  border: 1px solid #f79e02;
+}
+.custom-control-input:checked ~ .custom-control-label::before{
+  border-color: #f79e02;
+  background-color: #f79e02;
+}
+
+.custom-control-label::before{
+  border: 2px solid #f79e02;
+}
+
+@media (min-width: 768px){
+	.rightPane{
+		max-width:60%;
+	}
+}
+
+@media (min-width: 992px){
+	.rightPane{
+		max-width:40%;
+	}
+}
